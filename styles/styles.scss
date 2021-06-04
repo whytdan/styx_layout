@@ -83,7 +83,10 @@ body {
   }
 }
 main {
-  margin-bottom: 35px;
+  margin: 0 32px 35px;
+  @media (max-width: 576px) {
+    margin: 0;
+  }
 }
 
 .tabs {
@@ -179,8 +182,9 @@ main {
 
 .content {
   display: flex;
-
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .purchases_container {
@@ -362,8 +366,9 @@ main {
 
   align-items: flex-start;
   .purchase_img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
   }
   .seller_img {
     width: 63px;
@@ -388,7 +393,7 @@ main {
     transition: max-height 250ms ease-in-out;
   }
   .purchase_info__desc {
-    max-width: 260px;
+    max-width: 250px;
     h3 {
       font-size: 18px;
       color: var(--primary);
@@ -851,6 +856,11 @@ main {
 }
 
 .wallet_form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   max-width: 535px;
@@ -860,6 +870,10 @@ main {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 30px;
+
+  @media (max-width: 1150px) {
+    position: relative;
+  }
 
   @media (max-width: 576px) {
     padding: 20px;
