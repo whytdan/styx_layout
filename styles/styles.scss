@@ -436,11 +436,110 @@ main {
     height: 99px;
     border-radius: 26px;
     background: linear-gradient(
-      320deg,
-      rgba(255, 255, 255, 13%),
-      rgba(195, 189, 189, 30%),
-      rgba(255, 255, 255, 36%)
+      137deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      #ffffff 40.62%,
+      rgba(255, 255, 255, 0.2) 100%
     );
+  }
+}
+
+.seller__img-bronze {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 3px;
+    background: linear-gradient(
+      45deg,
+      #c28d6f 17.71%,
+      #e9c58f 47.92%,
+      #94561d 69.27%,
+      #9f7249 89.58%,
+      #c1976f 100%
+    );
+    box-shadow: -1px -3px 4px rgba(255, 196, 81, 0.3),
+      1px 3px 4px rgba(255, 196, 81, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+.seller__img-silver {
+  min-width: 40px;
+
+  height: 40px;
+  border-radius: 50%;
+  background-size: contain;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 3px;
+    background: linear-gradient(
+      45deg,
+      #b0b4bd 17.71%,
+      #f7f9ff 47.92%,
+      #54575f 81.77%,
+      #c9cacb 100%
+    );
+    box-shadow: -1px -3px 4px rgba(216, 221, 231, 0.3),
+      1px 3px 4px rgba(216, 221, 231, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+.seller__img-gold {
+  min-width: 40px;
+
+  height: 40px;
+  border-radius: 50%;
+  background-size: contain;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 3px;
+    background: linear-gradient(
+      45deg,
+      #fff9ef 3.65%,
+      #f3ce70 17.71%,
+      #fdf4d6 65.39%,
+      #e3cc54 100%
+    );
+    box-shadow: 1px 3px 4px rgba(255, 242, 125, 0.3),
+      -1px -3px 4px rgba(255, 242, 125, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
   }
 }
 
@@ -472,13 +571,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30px;
+    width: 40px;
     margin-right: 15px;
-    img {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
+
     p {
       color: var(--primary);
     }
@@ -662,7 +757,6 @@ main {
   max-width: 625px;
   margin: 0 10px;
   padding: 10px;
-  height: 612px;
   border-radius: 30px;
   border: 1px solid #fff;
 
@@ -801,10 +895,6 @@ main {
   .purchases_info {
     padding: 0;
   }
-  // .messages .message .message_seller img {
-  //   width: 40px;
-  //   height: 40px;
-  // }
   .messages .message .message_text h3 {
     font-size: 16px;
   }
