@@ -68,14 +68,33 @@ body {
   .nav-icons {
     img {
       cursor: pointer;
-      &:first-child {
-        margin-right: 35px;
+      // &:first-child {
+      //   margin-right: 35px;
+      // }
+    }
+    .nav-message {
+      position: relative;
+
+      div {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -7px;
+        top: 17px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        padding: 5px;
+        font-size: 10px;
+        line-height: 12px;
       }
     }
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    width: 173px;
+    width: 176px;
   }
 }
 
@@ -153,7 +172,7 @@ main {
 
 @media (max-width: 576px) {
   .inner_nav .nav-icons {
-    width: 60px;
+    width: 120px;
     justify-content: space-between;
     img {
       width: 20px;
@@ -456,6 +475,14 @@ main {
   }
 }
 
+.seller__img {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+
 .seller__img-bronze {
   min-width: 40px;
   height: 40px;
@@ -496,7 +523,17 @@ main {
   background-size: contain;
   position: relative;
   margin-right: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.nav_seller_img {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-size: contain;
+  position: relative;
+  margin-right: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
   &::before {
     content: '';
     position: absolute;
@@ -907,6 +944,8 @@ main {
 .message-status {
   height: 33px;
   align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 576px) {
