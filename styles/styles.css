@@ -24,8 +24,7 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-    width: 80% !important;
-    max-width: 1378px !important;
+    max-width: 1372px !important;
   }
 }
 
@@ -63,13 +62,16 @@ body {
 
 .inner_nav .nav_user_info h3 {
   font-size: 18px;
-  color: var(--secondary);
+  color: var(--primary);
   cursor: pointer;
+  margin-bottom: 0px !important;
+  opacity: 0.8;
 }
 
 .inner_nav .nav_user_info p {
   font-size: 10px;
-  color: var(--primary);
+  color: #9fa4ae;
+  margin-bottom: 0px !important;
 }
 
 .inner_nav .nav_logo {
@@ -131,6 +133,7 @@ main {
 
 .tabs .tab {
   width: 23%;
+  max-width: 300px;
   height: 45px;
   border-radius: 20px;
   border: 1px solid var(--primary);
@@ -246,7 +249,7 @@ main {
 }
 
 .purchases_container {
-  width: 700px;
+  width: 790px;
   margin: 0 10px;
 }
 
@@ -524,7 +527,7 @@ main {
 }
 
 .purchase_info {
-  width: 516px;
+  width: 596px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +538,7 @@ main {
   justify-content: space-between;
   border: 1px solid var(--primary);
   border-radius: 20px;
-  padding: 14px;
+  padding: 14px 31px 22px 45px;
   margin-right: 5px;
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -543,8 +546,8 @@ main {
 }
 
 .purchase_info .purchase_img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   margin-right: 5px;
 }
 
@@ -631,15 +634,11 @@ main {
 }
 
 .ads .ad {
-  width: 200px;
+  width: 230px;
   height: 99px;
   border-radius: 26px;
-  background: linear-gradient(
-    137deg,
-    rgba(255, 255, 255, 0.3) 0%,
-    #ffffff 40.62%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background-image: url('../assets/images/banner.png');
+  background-size: contain;
 }
 
 .seller__img-bronze {
@@ -671,6 +670,48 @@ main {
     1px 3px 4px rgba(255, 196, 81, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: -1px -3px 4px rgba(255, 196, 81, 0.3),
     1px 3px 4px rgba(255, 196, 81, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-mask: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #fff)
+      )
+      content-box,
+    -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.nav_user_img {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-size: contain;
+  position: relative;
+  margin-right: 7px;
+}
+
+.nav_user_img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #b0b4bd 17.71%,
+    #f7f9ff 47.92%,
+    #54575f 81.77%,
+    #c9cacb 100%
+  );
+  -webkit-box-shadow: -1px -3px 4px rgba(216, 221, 231, 0.3),
+    1px 3px 4px rgba(216, 221, 231, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px -3px 4px rgba(216, 221, 231, 0.3),
+    1px 3px 4px rgba(216, 221, 231, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.5);
   -webkit-mask: -webkit-gradient(
         linear,
         left top,
@@ -768,7 +809,7 @@ main {
 
 .messages {
   width: 100%;
-  max-width: 625px;
+  max-width: 760px;
   margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +905,7 @@ main {
   }
   .purchase_info {
     width: 490px;
+    padding: 15px;
   }
   .purchase button {
     width: 100px;
@@ -902,6 +944,9 @@ main {
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+  .messages-chat {
+    margin: 0 !important;
   }
 }
 
@@ -1027,7 +1072,7 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 625px;
+  max-width: 756px;
   margin: 0 10px;
   padding: 10px;
   border-radius: 30px;
