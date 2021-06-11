@@ -436,13 +436,13 @@ main {
   justify-content: space-between;
   border: 1px solid var(--primary);
   border-radius: 20px;
-  padding: 14px 31px 22px 45px;
+  padding: 14px 31px 22px 18px;
   margin-right: 5px;
 
   align-items: flex-start;
   .purchase_img {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     margin-right: 5px;
   }
   .seller_img {
@@ -468,7 +468,7 @@ main {
     transition: max-height 250ms ease-in-out;
   }
   .purchase_info__desc {
-    max-width: 250px;
+    max-width: 282px;
     h3 {
       font-size: 18px;
       color: var(--primary);
@@ -529,16 +529,16 @@ main {
 }
 
 .seller__img {
-  min-width: 40px;
-  height: 40px;
+  min-width: 63px;
+  height: 63px;
   border-radius: 50%;
   background-size: cover;
   position: relative;
 }
 
 .seller__img-bronze {
-  min-width: 40px;
-  height: 40px;
+  min-width: 63px;
+  height: 63px;
   border-radius: 50%;
   background-size: cover;
   position: relative;
@@ -613,9 +613,9 @@ main {
 }
 
 .seller__img-silver {
-  min-width: 40px;
+  min-width: 63px;
 
-  height: 40px;
+  height: 63px;
   border-radius: 50%;
   background-size: contain;
   position: relative;
@@ -646,9 +646,9 @@ main {
 }
 
 .seller__img-gold {
-  min-width: 40px;
+  min-width: 63px;
 
-  height: 40px;
+  height: 63px;
   border-radius: 50%;
   background-size: contain;
   position: relative;
@@ -761,6 +761,17 @@ main {
   .messages {
     max-width: none;
   }
+  .purchase_info .purchase_img {
+    width: 40px;
+    height: 40px;
+  }
+  .seller__img-gold,
+  .seller__img-silver,
+  .seller__img-bronze,
+  .seller__img {
+    min-width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -850,14 +861,15 @@ main {
   display: flex;
   justify-content: space-between;
   .message-receiver img {
-    width: 30px;
-    height: 30px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
   }
   .message-receiver {
     display: flex;
     align-items: center;
     height: 48px;
+    width: 106px;
     p {
       margin-left: 13px;
       color: var(--secondary);
@@ -1041,7 +1053,23 @@ main {
   .message-editor {
     width: 99%;
     left: 0;
-    padding: 40px 10px 10px;
+    padding: 70px 10px 10px;
+
+    .message-top-info {
+      justify-content: center;
+    }
+
+    .message-top-info .message-date {
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+
+    .message-top-info .message-receiver {
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
 
     .message-top-info .message-receiver img {
       width: 30px;
@@ -1074,7 +1102,7 @@ main {
 
   @media (max-width: 576px) {
     right: 5px;
-    top: -30px;
+    top: -60px;
   }
 
   &:hover {
