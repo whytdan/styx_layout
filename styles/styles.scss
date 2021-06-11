@@ -164,15 +164,6 @@ main {
   }
 }
 
-.active-side-item {
-  path {
-    fill: var(--primary);
-  }
-  p {
-    color: var(--primary) !important;
-  }
-}
-
 @media (max-width: 576px) {
   .inner_nav .nav-icons {
     width: 120px;
@@ -1172,6 +1163,17 @@ main {
 
     &:hover {
       border: 2px solid #fff;
+    }
+  }
+}
+
+.side_panel {
+  .active-side-item {
+    path {
+      fill: var(--primary);
+    }
+    a {
+      color: #fff !important;
     }
   }
 }

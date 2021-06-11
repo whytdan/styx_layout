@@ -217,14 +217,6 @@ main {
   margin-left: 14px;
 }
 
-.active-side-item path {
-  fill: var(--primary);
-}
-
-.active-side-item p {
-  color: var(--primary) !important;
-}
-
 @media (max-width: 576px) {
   .inner_nav .nav-icons {
     width: 120px;
@@ -1440,5 +1432,13 @@ main {
 
 .wallet_form button:hover {
   border: 2px solid #fff;
+}
+
+.side_panel .active-side-item path {
+  fill: var(--primary);
+}
+
+.side_panel .active-side-item a {
+  color: #fff !important;
 }
 /*# sourceMappingURL=styles.css.map */
