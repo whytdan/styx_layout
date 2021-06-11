@@ -204,7 +204,7 @@ main {
 }
 
 .main_content_container {
-  width: 763px;
+  width: 793px;
   margin: 0 10px;
 }
 
@@ -706,11 +706,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40px;
     margin-right: 15px;
 
     p {
-      color: var(--primary);
+      font-size: 9px;
+      color: var(--secondary);
     }
   }
   .message_text {
@@ -903,7 +903,7 @@ main {
   justify-content: space-between;
   max-width: 756px;
   margin: 0 10px;
-  padding: 10px;
+  padding: 16px;
   border-radius: 30px;
   border: 1px solid #fff;
 
@@ -1062,7 +1062,7 @@ main {
     .message-top-info .message-date {
       position: absolute;
       right: 0;
-      top: -30px;
+      top: -3r0px;
     }
 
     .message-top-info .message-receiver {
