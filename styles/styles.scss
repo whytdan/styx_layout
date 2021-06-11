@@ -102,6 +102,9 @@ body {
   .nav_logo {
     display: none;
   }
+  .security_container {
+    padding: 40px 20px !important;
+  }
 }
 main {
   margin: 0 32px 35px;
@@ -153,9 +156,9 @@ main {
       width: 20px;
       height: 20px;
     }
-    p {
+    a {
       margin-bottom: 0;
-      color: var(--secondary);
+      color: var(--secondary) !important;
       margin-left: 14px;
     }
   }
@@ -206,17 +209,76 @@ main {
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
-.purchases_container {
-  width: 790px;
+.main_content_container {
+  width: 763px;
   margin: 0 10px;
+}
+
+.security_container {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 40px 180px;
+  .security_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      align-self: flex-end;
+      width: 135px;
+      height: 35px;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      background-color: transparent;
+      margin-top: 10px;
+      &:hover {
+        border: 2px solid #fff;
+      }
+    }
+
+    .security_form__input_wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 20px;
+
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: var(--secondary);
+    }
+    input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      padding-bottom: 10px;
+      color: #fff;
+      border-bottom: 1px solid #9fa4ae;
+
+      &:focus {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
 }
 
 .purchases_thumbs_container {
-  width: 763px;
-  margin: 0 10px;
   .purchase_thumb {
     display: flex;
     flex-direction: column;
@@ -717,11 +779,7 @@ main {
   .side_panel {
     margin-bottom: 50px;
   }
-  .purchases_container {
-    width: 100%;
-    margin: 0;
-  }
-  .purchases_thumbs_container {
+  .main_content_container {
     width: 100%;
     margin: 0;
   }

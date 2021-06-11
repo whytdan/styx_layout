@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Messages</title>
+	<title>Account Security Page</title>
 
 
 	<!-- css -->
@@ -17,6 +17,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 		crossorigin="anonymous"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -86,7 +89,7 @@
 					</svg>
 					<a>Favorites</a>
 				</div>
-				<div class="mb-4">
+				<div class="mb-4 active-side-item">
 					<svg width="20" height="20" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M14 7H13V5C13 2.24 10.76 0 8 0C5.24 0 3 2.24 3 5V7H2C0.9 7 0 7.9 0 9V19C0 20.1 0.9 21 2 21H14C15.1 21 16 20.1 16 19V9C16 7.9 15.1 7 14 7ZM8 16C6.9 16 6 15.1 6 14C6 12.9 6.9 12 8 12C9.1 12 10 12.9 10 14C10 15.1 9.1 16 8 16ZM11.1 7H4.9V5C4.9 3.29 6.29 1.9 8 1.9C9.71 1.9 11.1 3.29 11.1 5V7Z"
@@ -94,7 +97,7 @@
 					</svg>
 					<a>Account security</a>
 				</div>
-				<div class="mb-4 active-side-item">
+				<div class="mb-4">
 					<svg width="20" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z"
@@ -112,66 +115,60 @@
 				</div>
 			</aside>
 
-			<div class="messages">
-				<div class="message active-message">
-					<div class="d-flex">
-						<div class="message_seller">
-							<div style="background-image: url('./assets/images/seller.png');" class="seller__img-gold"></div>
-							<p>seller</p>
+			<div class="security_container main_content_container">
+				<form class="security_form" id="password_reset">
+						<div class="security_form__input_wrapper">
+							<label for="oldPassword" >Old password</label>
+							<input placeholder="Enter old password" type="password" name="oldPassword">
+							<img class="eye-cross" src="./assets/icons/eye-cross.svg" alt="eye-cross">
+							<img class="eye d-none" src="./assets/icons/eye.svg" alt="eye">
 						</div>
-	
-						<div class="message_text">
-							<h3>Cherry shop</h3>
-							<p>Hello dear! I want to get you better cherry in the Earth. If you like this please send message to me. I will waiting for your message. Have a nice day!!!</p>
+
+						<div class="security_form__input_wrapper">
+							<label for="newPassword">New password</label>
+							<input placeholder="Enter new password" type="password" name="newPassword">
+							<img class="eye-cross" src="./assets/icons/eye-cross.svg" alt="eye-cross">
+							<img class="eye d-none" src="./assets/icons/eye.svg" alt="eye">
 						</div>
+
+						<div class="security_form__input_wrapper">
+							<label for="confirmPassword">Confirm new password</label>
+							<input placeholder="Confirm new password" type="password" name="confirmPassword">
+						</div>
+
+						<button>
+							Save
+						</button>
+				</form>
+
+				<form class="security_form" id="code_reset">
+					<div class="security_form__input_wrapper">
+						<label for="oldSecretCode" >Old secret code</label>
+						<input placeholder="Enter old secret code" type="password" name="oldSecretCode">
+						<img class="eye-cross" src="./assets/icons/eye-cross.svg" alt="eye-cross">
+						<img class="eye d-none" src="./assets/icons/eye.svg" alt="eye">
 					</div>
 
-					<div class="message_date">
-						<span></span>
-						<p>08/10/2021</p>
+					<div class="security_form__input_wrapper">
+						<label for="newSecretCode">New secret code</label>
+						<input placeholder="Enter new secret code" type="password" name="newSecretCode">
+						<img class="eye-cross" src="./assets/icons/eye-cross.svg" alt="eye-cross">
+						<img class="eye d-none" src="./assets/icons/eye.svg" alt="eye">
+
 					</div>
 
-				</div>
-				<div class="message">
-					<div class="d-flex">
-						<div class="message_seller">
-							<div style="background-image: url('./assets/images/seller.png');" class="seller__img-silver"></div>
-							<p>seller</p>
-						</div>
-	
-						<div class="message_text">
-							<h3>Cherry shop</h3>
-							<p>Hello dear! I want to get you better cherry in the Earth. If you like this please send message to me. I will waiting for your message. Have a nice day!!!</p>
-						</div>
+					<div class="security_form__input_wrapper">
+						<label for="confirmSecretCode">Confirm new secret code</label>
+						<input placeholder="Confirm new secret code" type="password" name="confirmSecretCode">
 					</div>
 
-					<div class="message_date">
-						<span></span>
-						<p>08/10/2021</p>
-					</div>
-
-				</div>
-				<div class="message">
-					<div class="d-flex">
-						<div class="message_seller">
-							<div style="background-image: url('./assets/images/seller.png');" class="seller__img-bronze"></div>
-							<p>seller</p>
-						</div>
-	
-						<div class="message_text">
-							<h3>Cherry shop</h3>
-							<p>Hello dear! I want to get you better cherry in the Earth. If you like this please send message to me. I will waiting for your message. Have a nice day!!!</p>
-						</div>
-					</div>
-
-					<div class="message_date">
-						<span></span>
-						<p>08/10/2021</p>
-					</div>
-
-				</div>
+					<button>
+						Save
+					</button>
+			</form>
 			</div>
 
+		
 			<div class="ads">
 				<div class="ad mb-3"></div>
 				<div class="ad mb-3"></div>
@@ -182,6 +179,24 @@
 
 		</section>
 	</main>
+
+	<script>
+		$('.security_form__input_wrapper .eye-cross').each((index, eyeCross) => {
+			$(eyeCross).on('click', (e) => {
+				$(e.target).addClass('d-none');
+				$(e.target).next().removeClass('d-none');
+				$(e.target).prev().attr('type', 'text');
+			})
+		})
+
+		$('.security_form__input_wrapper .eye').each((index, eye) => {
+			$(eye).on('click', (e) => {
+				$(e.target).addClass('d-none');
+				$(e.target).prev().removeClass('d-none');
+				$(e.target).prev().prev().attr('type', 'password');
+			})
+		})
+	</script>
 
 </body>
 

@@ -128,6 +128,9 @@ body {
   .nav_logo {
     display: none;
   }
+  .security_container {
+    padding: 40px 20px !important;
+  }
 }
 
 main {
@@ -208,9 +211,9 @@ main {
   height: 20px;
 }
 
-.side_panel div p {
+.side_panel div a {
   margin-bottom: 0;
-  color: var(--secondary);
+  color: var(--secondary) !important;
   margin-left: 14px;
 }
 
@@ -268,17 +271,93 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
-.purchases_container {
-  width: 790px;
-  margin: 0 10px;
-}
-
-.purchases_thumbs_container {
+.main_content_container {
   width: 763px;
   margin: 0 10px;
+}
+
+.security_container {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 40px 180px;
+}
+
+.security_container .security_form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.security_container .security_form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 135px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 16px;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.security_container .security_form button:hover {
+  border: 2px solid #fff;
+}
+
+.security_container .security_form .security_form__input_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.security_container .security_form .security_form__input_wrapper img {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.security_container .security_form label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.security_container .security_form input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-bottom: 10px;
+  color: #fff;
+  border-bottom: 1px solid #9fa4ae;
+}
+
+.security_container .security_form input:focus {
+  border-bottom: 1px solid #fff;
 }
 
 .purchases_thumbs_container .purchase_thumb {
@@ -875,11 +954,7 @@ main {
   .side_panel {
     margin-bottom: 50px;
   }
-  .purchases_container {
-    width: 100%;
-    margin: 0;
-  }
-  .purchases_thumbs_container {
+  .main_content_container {
     width: 100%;
     margin: 0;
   }
