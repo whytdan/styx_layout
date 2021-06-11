@@ -182,7 +182,7 @@ main {
 
 .side_panel {
   width: 230px;
-  height: auto;
+  height: 319px;
   border: 1px solid var(--primary);
   border-radius: 20px;
   padding: 27px 20px;
