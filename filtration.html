@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Filtration Page</title>
+
+
+	<!-- css -->
+	<link rel="stylesheet" href="./styles/styles.css">
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="container mt-5">
+		<div class="inner_nav">
+			<div class="nav_user_info">
+				<div class="nav_seller_img" style="background-image: url('./assets/images/nuysha.png');"></div>
+				<div>
+					<h3>Scrooge McDuck</h3>
+					<p>92.21 $ ~ 0.0017 btc</p>
+				</div>
+			</div>
+
+			<img class="nav_logo" src="./assets/images/logo.png" alt="logo">
+
+			<div class="nav-icons">
+				<img src="./assets/icons/phone.svg" alt="phone">
+				<div class="nav-message">
+					<img src="./assets/icons/message_nav.svg" alt="message-nav">
+					<div>
+						<span>3</span>
+					</div>
+				</div>
+				<img src="./assets/icons/cart.svg" alt="cart-icon">
+				<img src="./assets/icons/menu.svg" alt="menu-icon">
+			</div>
+		</div>
+	</nav>
+
+	<main class="container">
+		<div class="tabs">
+			<div class="tab">
+				<p>MAIN PAGE</p>
+			</div>
+			<div class="tab">
+				<p>TRUSTED SELLERS</p>
+			</div>
+			<div class="tab">
+				<p>AUTO-ESCROW</p>
+			</div>
+			<div class="tab">
+				<p>NEWS</p>
+			</div>
+		</div>
+
+		<section class="content">
+			<aside class="filtration_panel">
+                <form>
+                    <div class="filtration_search_wrapper">
+                        <img src="./assets/icons/search.svg" alt="search-icon">
+                        <input placeholder="What do you need today?" type="text" name="searchValue">
+                    </div>
+
+                    <div class="filtration_panel_label">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.64269 15.212L8.5406 16.2357V9.48957C8.53955 9.22101 8.44071 8.96366 8.2654 8.77299L2.11617 2.04737H16.8819L10.7422 8.77299C10.5669 8.96366 10.468 9.22101 10.467 9.48957L10.4385 17.4027L12.3364 18.4263V9.90928L18.5805 3.07106C18.8303 2.7977 18.973 2.43115 18.9791 2.04737V1.02369C18.9791 0.752188 18.8791 0.491809 18.7012 0.299831C18.5232 0.107853 18.2818 0 18.0302 0H0.948955C0.697277 0 0.455906 0.107853 0.277943 0.299831C0.0999791 0.491809 0 0.752188 0 1.02369V2.04737C0.00607094 2.43115 0.148782 2.7977 0.398561 3.07106L6.64269 9.90928V15.212Z" fill="#54575F"/>
+                            </svg>
+                        <p>Filters</p>
+                    </div>
+
+                    <div class="filtration_categories">
+                        <div class="filtration_category">
+                            <p>Черешня</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Вишня</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Малина</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Клубника</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Смородина</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Голубика</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                        <div class="filtration_category">
+                            <p>Морошка</p>
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                            </svg>                                
+                        </div>
+                    </div>
+
+                    <div class="d-none filtration_config">
+                        <div class="filtration_config_date">    
+                            <h3>Date condition</h3>
+                            <div class="filtration_option">
+                                <p>24 hours</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>Last week</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>Last month</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>All time</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                        </div>
+                        <div class="filtration_config_price">
+                            <h3>Price</h3>
+                            <div class="filtration_price_inputs">
+                                <input placeholder="$ Min" type="text" name="min_price">
+                                <input placeholder="$ Max" type="text" name="max_price">
+                            </div>
+                        </div>
+
+                        <div class="filtration_config_status">
+                            <h3>Seller status</h3>
+                            <div class="filtration_option">
+                                <p>Gold</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>Silver</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>Bronze</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                        </div>
+                        <div class="filtration_config_avl">
+                            <h3>Available</h3>
+                            <div class="filtration_option">
+                                <p>Now</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                            <div class="filtration_option">
+                                <p>Pre-order</p>
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00016 11.1701L1.83016 7.00009L0.410156 8.41009L6.00016 14.0001L18.0002 2.00009L16.5902 0.590088L6.00016 11.1701Z" fill="white"/>
+                                </svg>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <button>
+                        Go
+                    </button>
+                </form>
+			</aside>
+
+			<div class="filtrated_products_container">
+                <div class="filtrated_product">
+
+                    <div class="filtrated_product_top-info">
+                        <img class="filtrated_product_image" src="./assets/images/strawberry.svg" alt="strawberry-image">
+
+                        <div class="filtrated_product_text">
+                            <h3>
+                                Варенье земляничное домашнее
+                            </h3>
+                            <p class="d-none d-md-block">Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64</p>
+                        </div>
+                        <p class="filtrated_product_quantity">
+                            x14
+                        </p>
+                    </div>
+
+                    <p class="d-block d-md-none filtrated_product_mobile_description">
+                        Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64
+                    </p>
+
+                    <div class="filtrated_product_bottom-info">
+    
+                        <div class="filtrated_product_buttons">
+                            <button>Add to cart</button>
+                            <button>Contact seller</button>
+                        </div>
+    
+                        <p class="filtrated_product_price">
+                            $50
+                        </p>
+    
+                        <div class="filtrated_product_seller">
+                            <div style="background-image: url('./assets/images/seller.png');" class="seller__img-gold"></div>
+                            <p>seller</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtrated_product">
+
+                    <div class="filtrated_product_top-info">
+                        <img class="filtrated_product_image" src="./assets/images/strawberry.svg" alt="strawberry-image">
+
+                        <div class="filtrated_product_text">
+                            <h3>
+                                Варенье земляничное домашнее
+                            </h3>
+                            <p class="d-none d-md-block">Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64</p>
+                        </div>
+                        <p class="filtrated_product_quantity">
+                            x2
+                        </p>
+                    </div>
+
+                    <p class="d-block d-md-none filtrated_product_mobile_description">
+                        Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64
+                    </p>
+
+                    <div class="filtrated_product_bottom-info">
+    
+                        <div class="filtrated_product_buttons">
+                            <button>Add to cart</button>
+                            <button>Contact seller</button>
+                        </div>
+    
+                        <p class="filtrated_product_price">
+                            $50
+                        </p>
+    
+                        <div class="filtrated_product_seller">
+                            <div style="background-image: url('./assets/images/seller.png');" class="seller__img-gold"></div>
+                            <p>seller</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtrated_product">
+
+                    <div class="filtrated_product_top-info">
+                        <img class="filtrated_product_image" src="./assets/images/strawberry.svg" alt="strawberry-image">
+
+                        <div class="filtrated_product_text">
+                            <h3>
+                                Варенье земляничное домашнее
+                            </h3>
+                            <p class="d-none d-md-block">Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64</p>
+                        </div>
+                        <p class="filtrated_product_quantity">
+                            x2
+                        </p>
+                    </div>
+
+                    <p class="d-block d-md-none filtrated_product_mobile_description">
+                        Отличное варенье для всей семьи собрать 1234546 345462 34654647 3246546 23465 56567 45676 45767657 547767 457676 67767575 67767 67675.3454355 345535 3455345 5654645 64
+                    </p>
+
+                    <div class="filtrated_product_bottom-info">
+    
+                        <div class="filtrated_product_buttons">
+                            <button>Add to cart</button>
+                            <button>Contact seller</button>
+                        </div>
+    
+                        <p class="filtrated_product_price">
+                            $50
+                        </p>
+    
+                        <div class="filtrated_product_seller">
+                            <div style="background-image: url('./assets/images/seller.png');" class="seller__img-gold"></div>
+                            <p>seller</p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="ads">
+				<div class="ad mb-3"></div>
+				<div class="ad mb-3"></div>
+				<div class="ad mb-3"></div>
+				<div class="ad mb-3"></div>
+				<div class="ad"></div>
+			</div>
+
+		</section>
+	</main>
+
+
+    <script>
+        $('.filtrated_product').each((_, product) => {
+            $(product).on('click', (e) => {
+                const desktopText = $(e.currentTarget).children('.filtrated_product_top-info').children('.filtrated_product_text').children('p');
+                const mobileText = $(e.currentTarget).children('.filtrated_product_mobile_description');
+
+                $(desktopText).toggleClass('show_text')
+                $(mobileText).toggleClass('show_text')
+            })
+        })
+
+        $('.filtration_category').each((_, category) => {
+            $(category).on('click', (e) => {
+                $(category).toggleClass('active_filter_option');
+            })
+        })
+
+        $('.filtration_option').each((_, category) => {
+            $(category).on('click', (e) => {
+                $(category).toggleClass('active_filter_option');
+            })
+        })
+
+        $('.filtration_panel_label').on('click', (e) => {
+            const label = $(e.currentTarget);
+            $('.filtration_panel').toggleClass('default-max-height');
+            label.toggleClass('active_filter_label');
+            $('.filtration_config').toggleClass('d-none');
+            $('.filtration_categories').toggleClass('d-none');
+        })
+    </script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
