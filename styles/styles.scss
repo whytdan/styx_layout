@@ -396,6 +396,10 @@ main {
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
+
+      .filtrated_product_price {
+        font-size: 14px !important;
+      }
     }
 
     .filtrated_product_image {
@@ -426,6 +430,10 @@ main {
         @media (max-width: 768px) {
           font-size: 15px;
           max-width: 160px;
+        }
+
+        @media (max-width: 350px) {
+          max-width: 140px;
         }
       }
 
@@ -499,6 +507,8 @@ main {
       font-weight: 600;
       margin-bottom: 0;
       margin-left: 20px;
+      min-width: 52px;
+      text-align: center;
       @media (max-width: 768px) {
         position: absolute;
         top: 7px;
