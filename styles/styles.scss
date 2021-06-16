@@ -134,12 +134,11 @@ main {
 }
 
 .default-max-height {
-  max-height: none !important;
+  max-height: 480px;
 }
 
 .filtration_panel {
   width: 272px;
-  max-height: 480px;
   border: 1px solid var(--primary);
   border-radius: 20px;
   display: flex;
