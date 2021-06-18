@@ -397,6 +397,11 @@ main {
   margin-bottom: 0;
   color: var(--secondary) !important;
   margin-left: 14px;
+  text-decoration: none;
+}
+
+.side_panel div a:hover {
+  color: var(--primary) !important;
 }
 
 .side_panel .active-side-item path {

@@ -328,6 +328,10 @@ main {
       margin-bottom: 0;
       color: var(--secondary) !important;
       margin-left: 14px;
+      text-decoration: none;
+      &:hover {
+        color: var(--primary) !important;
+      }
     }
   }
   .active-side-item {
