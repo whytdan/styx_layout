@@ -1537,6 +1537,7 @@ main {
 
 .messages-chat {
   width: 100%;
+  height: 612px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1552,6 +1553,10 @@ main {
   padding: 16px;
   border-radius: 30px;
   border: 1px solid #fff;
+}
+
+.messages-chat .messages-list {
+  overflow-y: scroll;
 }
 
 .messages-chat .message-send-control {
