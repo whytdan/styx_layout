@@ -1295,7 +1295,16 @@ main {
 
   .messages-list {
     overflow-y: scroll;
+    &::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 100px;
+    }
   }
+
   .message-send-control {
     justify-self: flex-end;
     width: 90%;

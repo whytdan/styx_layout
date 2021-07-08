@@ -1559,6 +1559,16 @@ main {
   overflow-y: scroll;
 }
 
+.messages-chat .messages-list::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+.messages-chat .messages-list::-webkit-scrollbar {
+  width: 6px;
+  height: 100px;
+}
+
 .messages-chat .message-send-control {
   justify-self: flex-end;
   width: 90%;
